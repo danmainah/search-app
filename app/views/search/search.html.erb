@@ -3,13 +3,13 @@
 <%= form_for search_path, method: :get do |f| %>
   <p>
     <%= f.label "Search for" %>
-    <%= text_field_tag :q, params[:q] %>
-    <%= submit_tag "Go", name: nil %>
+    <%= text_field_tag :text, params[:text] %>
+    <%= submit_tag "Search", name: nil %>
   </p>
 <% end %>
 
 
-<ul>
+<ol>
   <% @articles.each do |article| %>
     <li>
       <h3>
@@ -17,4 +17,4 @@
       </h3>
     </li>
   <% end %>
-</ul>
+</ol>

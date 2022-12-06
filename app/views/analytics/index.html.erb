@@ -1,0 +1,15 @@
+<h1>Searched Terms</h1>
+
+<ol>
+  <% if @analytics == [] %>
+    <h3>No analytics found</h3>
+  <% end %>
+  <% @analytics.each do |analytic| %>
+    <li>
+      <h3>
+        <%= analytic.text %>
+         <%= analytic.created_at %>
+      </h3>
+    </li>
+  <% end %>
+</ol>

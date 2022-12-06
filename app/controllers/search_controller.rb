@@ -1,10 +1,12 @@
 class SearchController < ApplicationController
   def search
     def search
-      if params[:q].nil?
+      if params[:text].nil?
         @articles = []
       else
-        @articles = Article.search params[:q]
+        @analytic = Analytic.new({text: params[:text]})
+        @analytic.save
+        @articles = Article.search params[:text]
       end
   end
   end
