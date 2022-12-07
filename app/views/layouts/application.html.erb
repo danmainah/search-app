@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Search App</span>
+         <div class="navbar-brand"><%= link_to 'Articles', articles_path %></div>
+         <div class="navbar-brand"><%= link_to 'New Article', new_article_path %></div>
+         <div class="navbar-brand"><%= link_to 'Search articles', search_path %></div>
+         <div class="navbar-brand"><%= link_to 'Searched Texts', analytics_path %></div>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
