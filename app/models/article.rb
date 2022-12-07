@@ -17,4 +17,6 @@ class Article < ActiveRecord::Base
     indexes :title,  analyzer: 'english'
     indexes :text,  analyzer: 'english'
   end
+  validates :title, presence: true
+  validates :text, presence: true
 end
