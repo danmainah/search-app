@@ -1,7 +1,6 @@
-# Myblog
+# Search App
 
-This is a simple blog application testing the use of CRUD in rails,how to create ,edit,update and  destroy articles.It also has comment section for adding comments. The project test basic concepts of MVC application architecture.
-
+This is a simple search app, illustrating how to search data in the database, and also store the searched phrases.
 
 
 ## Built With
