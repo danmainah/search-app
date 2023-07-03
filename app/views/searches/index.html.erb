@@ -1,0 +1,10 @@
+<h1>Searches</h1>
+<% if @searches.any? %>
+  <ul>
+    <% @searches.each do |search| %>
+      <li><%= search.query %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No record of search found</p>
+<% end %>
