@@ -1,0 +1,11 @@
+<h1>Articles</h1>
+<%# use conditional statement if else to display articles if there are articles if not shows no article in the database %>
+<% if @articles.any? %>
+  <ul>
+    <% @articles.each do |article| %>
+      <li><%= article.title %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No articles found</p>
+<% end %>
